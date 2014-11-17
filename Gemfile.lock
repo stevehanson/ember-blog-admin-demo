@@ -132,7 +132,6 @@ PLATFORMS
 DEPENDENCIES
   active_model_serializers
   bootstrap-sass
-  coffee-rails (~> 4.0.0)
   ember-rails
   jbuilder (~> 2.0)
   jquery-rails

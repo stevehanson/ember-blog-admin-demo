@@ -1,0 +1,10 @@
+<h2>Edit User</h2>
+
+<form {{action "saveUser" on="submit" }}>
+  {{ input value=firstName placeholder="First Name" }}
+  {{ input value=lastName placeholder="Last Name" }}
+  {{ input value=email placeholder="Email" }}
+  {{ view "select" value=role content=roles }}
+
+  {{ input type="submit" value="Save User" class="button" }}
+</form>

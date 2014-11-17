@@ -1,2 +1,29 @@
-<h1>Users</h1>
+<h2>Users</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Role</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each user in model}}
+      <tr>
+        <td>
+          {{#link-to "users.edit" user}}
+            {{user.firstName}} {{user.lastName}}
+          {{/link-to}}
+        </td>
+        <td>{{user.email}}</td>
+        <td>{{user.role}}</td>
+      </tr>
+    {{/each}}
+</table>
+
+{{#link-to "users.new" class="button"}}
+  <span class="ion-plus"></span>
+  Add User
+{{/link-to}}
 

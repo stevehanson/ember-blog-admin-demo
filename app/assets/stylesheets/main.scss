@@ -1,15 +1,18 @@
 body {
   background: #f1f1f1;
   font-family: 'Gotham SSm A', 'Gotham SSm B';
-  padding: 0 2em;
+  padding: 2em;
 }
 
 h1, h2 {
   font-weight: 300;
 }
 
+
+
 .site-title {
   margin-bottom: 0;
+  font-size: 1.8em;
 }
 
 a {
@@ -35,13 +38,16 @@ a {
 nav > ul {
   list-style-type: none;
   padding-left: 0;
+  margin-left: 0;
+  background: #262626;
 
   .nav-item {
     display: inline-block;
 
     a {
       display: inline-block;
-      padding: 1em 0 0 2em;
+      padding: 1em 0 1em 2em;
+      color: #fff;
       font-size: 0.9em;
     }
   }
