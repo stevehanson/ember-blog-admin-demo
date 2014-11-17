@@ -4,7 +4,7 @@ App.UsersEditController = Ember.ObjectController.extend({
   actions: {
     saveUser: function() {
       this.get('model').save().then(function() {
-        this.transitionTo('users');
+        this.transitionToRoute('users');
       }.bind(this));
     }
   }
