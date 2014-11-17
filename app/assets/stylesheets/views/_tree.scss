@@ -1,0 +1,60 @@
+.tree {
+  list-style-type: none;
+  padding-left: 0;
+
+  &.tree-root {
+    margin-left: -2em; // since all "li" have padding-left: 1em;
+  }
+
+  .tree-item {
+    line-height: 3em;
+    padding-left: 2em;
+
+    &.expandable .tree-label:hover {
+      cursor: pointer;
+    }
+  }
+
+  .tree-label {
+    font-size: 1.1em;
+    padding-left: 1em;
+    margin-bottom: 0.4em;
+
+    background: #fbfbfb;
+    border: 1px solid #f3f3f3;
+    border-left-width: 2px;
+
+    &:hover {
+      background: #f8f8f8;
+
+      .tree-item-edit {
+        display: inline-block;
+      }
+    }
+  }
+
+  .tree-item-state {
+    display: inline-block;
+    min-width: 0.7em;
+  }
+
+  .tree-item-checkbox {
+    display: inline-block;
+    float: left;
+    margin-top: 1.05em;
+    margin-left: 1em;
+    margin-right: 0.8em;
+  }
+
+  .tree-item-edit {
+    float: right;
+    margin-right: 1em;
+    display: none;
+  }
+
+  .tree-label-name {
+    display: inline-block;
+    margin-left: 0.75em;
+    color: $text_color;
+  }
+}

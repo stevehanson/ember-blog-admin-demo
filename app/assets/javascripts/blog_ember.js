@@ -1,5 +1,6 @@
 //= require ./store
 //= require_tree ./models
+//= require_tree ./pods
 //= require_tree ./controllers
 //= require_tree ./views
 //= require_tree ./helpers

@@ -1,0 +1,54 @@
+
+// since upload-file is a view,
+// scope its styles for modularity
+.upload-file {
+
+  .file-drop {
+    background: #f8f8f8;
+    border: 2px dashed #ddd;
+    cursor: pointer;
+    float: left;
+    height: 200px;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    overflow: hidden;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+    text-overflow: ellipsis;
+
+    &.condensed {
+      height: auto;
+      padding: 20px;
+
+      h1 {
+        margin-top: 0;
+      }
+    }
+
+    &.drag {
+      background: #f0f0f0;
+    }
+
+    h1 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-top: 1em;
+    }
+  }
+
+  &.has-error .file-drop {
+    border-color: #a94442;
+  }
+
+  .file-preview {
+
+    max-width: 150px;
+    margin: 0 auto;
+
+  }
+
+  margin-bottom: 2em;
+
+}
+

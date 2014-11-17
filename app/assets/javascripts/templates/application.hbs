@@ -1,8 +1,15 @@
-<h1>Application</h1>
+<h1 class="site-title">Application</h1>
+<div class="container">
 
-<ul>
-  <li>{{link-to "Home" "index"}}</li>
-  <li>{{link-to "Users" "users"}}</li>
-</ul>
+  <nav>
+    <ul>
+      <li class="nav-item">{{link-to "Home" "index"}}</li>
+      <li class="nav-item">{{link-to "Users" "users"}}</li>
+    </ul>
+  </nav>
 
-{{outlet}}
+  <div class="content">
+    {{outlet}}
+  </div>
+
+</div>
