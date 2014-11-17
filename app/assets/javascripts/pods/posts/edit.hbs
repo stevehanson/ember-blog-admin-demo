@@ -1,0 +1,16 @@
+<h2>Edit Post</h2>
+
+<form {{action "savePost" on="submit" }}>
+  {{ input value=title placeholder="Title" }}
+  {{ textarea value=body placeholder="Body" }}
+  {{ view "select" rows="10" value=user.id content=userOptions optionLabelPath="content.name" optionValuePath="content.id" }}
+
+  {{#if hasBody}}
+    <strong>Preview</strong>
+    <div>
+      {{ markdown body }}
+    </div>
+  {{/if}}
+
+  {{ input type="submit" value="Save Post" class="button" }}
+</form>

@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>BlogEmber</title>
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
   <%= stylesheet_link_tag    "vendor", :media => "all" %>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= csrf_meta_tags %>
@@ -10,8 +11,8 @@
 
 <%= yield %>
 
-
 <%= javascript_include_tag 'application' %>
+<script src="//cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js"></script>
 
 </body>
 </html>

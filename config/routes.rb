@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :posts
+
   resources :users
 
   get "/admin", to: "admin#index", as: :admin
